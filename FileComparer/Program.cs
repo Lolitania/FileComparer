@@ -20,7 +20,7 @@ public class Program
             if (src.Exists && dst.Exists)
             {
                 Console.WriteLine("Comparison Mode: Directory");
-                Console.WriteLine("Result: ('+' = Add, '-' = Remove, '*' = Modify, 'D' = Directory, 'F' = Folder)");
+                Console.WriteLine("Result: ('+' = Add, '-' = Remove, '*' = Modify, 'D' = Directory, 'F' = File)");
                 CompareFolders(src, dst, src.FullName.Length + 1, dst.FullName.Length + 1);
                 Console.WriteLine("Comparison done.");
                 Console.ReadKey();
